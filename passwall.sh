@@ -14,7 +14,7 @@ clear
 
 uci set system.@system[0].zonename='Asia/Tashkent'
 
-uci set system.@system[0].timezone='<+0330>-5:00'
+uci set system.@system[0].timezone='<+0500>-5:00'
 
 uci commit system
 
@@ -63,37 +63,37 @@ done
 ### Install package ###
 
 opkg update
-sleep 3
+sleep 6
 opkg remove dnsmasq
-sleep 4
+sleep 6
 opkg install dnsmasq-full
-sleep 4
+sleep 6
 opkg install unzip
-sleep 4
+sleep 6
 opkg install luci-app-passwall
-sleep 4
+sleep 6
 opkg install ipset
-sleep 4
+sleep 6
 opkg install ipt2socks
-sleep 4
+sleep 6
 opkg install iptables
-sleep 4
+sleep 6
 opkg install iptables-legacy
-sleep 4
+sleep 6
 opkg install iptables-mod-conntrack-extra
-sleep 4
+sleep 6
 opkg install iptables-mod-iprange
-sleep 4
+sleep 6
 opkg install iptables-mod-socket
-sleep 4
+sleep 6
 opkg install iptables-mod-tproxy
-sleep 4
+sleep 6
 opkg install kmod-ipt-nat
-sleep 4
+sleep 6
 opkg install kmod-nft-socket
-sleep 4
+sleep 6
 opkg install kmod-nft-tproxy
-sleep 4
+sleep 6
 
 ####improve
 
@@ -209,7 +209,7 @@ fi
 
 uci set system.@system[0].zonename='Asia/Tashkent'
 
-uci set system.@system[0].timezone='<+0330>-5:00'
+uci set system.@system[0].timezone='<+0500>-5:00'
 
 uci commit system
 
