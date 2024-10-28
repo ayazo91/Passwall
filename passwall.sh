@@ -12,17 +12,9 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Asia/Tashkent'
 
-uci set network.wan.peerdns="0"
-
-uci set network.wan6.peerdns="0"
-
-uci set network.wan.dns='1.1.1.1'
-
-uci set network.wan6.dns='2001:4860:4860::8888'
-
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='<+0330>-5:00'
 
 uci commit system
 
@@ -39,7 +31,7 @@ if [ "$SNNAP" == "SNAPSHOT" ]; then
 
 echo -e "${YELLOW} SNAPSHOT Version Detected ! ${NC}"
 
-rm -f passwalls.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/main/passwalls.sh && chmod 777 passwalls.sh && sh passwalls.sh
+rm -f passwalls.sh && wget https://raw.githubusercontent.com/ayazo91/Passwall/main/passwalls.sh && chmod 777 passwalls.sh && sh passwalls.sh
 
 exit 1
 
@@ -73,46 +65,46 @@ done
 opkg update
 sleep 3
 opkg remove dnsmasq
-sleep 2
+sleep 4
 opkg install dnsmasq-full
-sleep 3
+sleep 4
 opkg install unzip
-sleep 2
+sleep 4
 opkg install luci-app-passwall
-sleep 3
+sleep 4
 opkg install ipset
-sleep 2
+sleep 4
 opkg install ipt2socks
-sleep 2
+sleep 4
 opkg install iptables
-sleep 2
+sleep 4
 opkg install iptables-legacy
-sleep 2
+sleep 4
 opkg install iptables-mod-conntrack-extra
-sleep 2
+sleep 4
 opkg install iptables-mod-iprange
-sleep 2
+sleep 4
 opkg install iptables-mod-socket
-sleep 2
+sleep 4
 opkg install iptables-mod-tproxy
-sleep 2
+sleep 4
 opkg install kmod-ipt-nat
-sleep 2
+sleep 4
 opkg install kmod-nft-socket
-sleep 2
+sleep 4
 opkg install kmod-nft-tproxy
-sleep 2
+sleep 4
 
 >/etc/banner
 
-echo "    ___    __  ___________  __  ______  __________ ___________   __
+echo "    ___    __  ___________  __  ______  __________ ___________ 
    /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
   / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
  / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
 /_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @AmirHosseinTSL" >> /etc/banner
+telegram : @bro1491" >> /etc/banner
 
-sleep 1
+sleep 3
 
 
 ####improve
@@ -227,9 +219,9 @@ rm -f amirhossein.sh && wget https://raw.githubusercontent.com/amirhosseinchogha
 
 fi
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Asia/Tashkent'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='<+0330>-5:00'
 
 uci commit system
 
