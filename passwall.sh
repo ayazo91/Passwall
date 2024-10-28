@@ -95,18 +95,6 @@ sleep 4
 opkg install kmod-nft-tproxy
 sleep 4
 
->/etc/banner
-
-echo "    ___    __  ___________  __  ______  __________ ___________ 
-   /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
-  / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
- / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
-/_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @bro1491" >> /etc/banner
-
-sleep 3
-
-
 ####improve
 
 cd /tmp
@@ -252,7 +240,7 @@ my.irancell.ir'
 uci commit
 
 echo -e "${YELLOW}** Installation Completed ** ${ENDCOLOR}"
-echo -e "${MAGENTA} Made With Love By : AmirHossein ${ENDCOLOR}"
+echo -e "${MAGENTA} Made With Love By : Ayazhan ${ENDCOLOR}"
 
 
 rm passwallx.sh 2> /dev/null
